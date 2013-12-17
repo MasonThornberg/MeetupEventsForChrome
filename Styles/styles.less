@@ -1,0 +1,203 @@
+﻿@font-face {
+    font-family: WebSymbols;
+    src: url(Fonts/WebSymbols-Regular.otf);
+}
+.WebSymbols { font-family: "WebSymbols"; }
+@font-face {
+    /*font-family: Roboto;*/ 
+    /*src: url(http://fonts.googleapis.com/css?family=Roboto);*/
+}
+.Roboto { font-family: "Roboto",Helvetica,Arial,sans-serif; }
+
+@theme-gray: #333333;
+@theme-red: #e51a38;
+ 
+#popup-body {
+    .Roboto;
+    margin:0px;
+    width: 350px;
+    height: 600px;
+    color:@theme-gray;
+    font-size:12px;
+}
+#popup-header{
+    padding:5px;
+    text-align:center;
+	background-color: @theme-red;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    background: -webkit-linear-gradient(top, #e0393e 0%,#c71f24 100%);
+}
+#popup-header-logo {
+    float:left;
+}
+#popup-header-settings{
+    float:right;
+    font-family:WebSymbols;
+    font-weight:normal;
+    a{ text-decoration:none; color:white; }
+    a:hover{ color:#333; }
+}
+.event {
+    width:340px;
+    height:75px;
+    border-bottom: solid 1px black;
+    margin: 0 5px;
+    padding: 5px 0;
+    background: -webkit-linear-gradient(top, #fbfbfb 0%,#f6f6f6 100%);
+    border-bottom: 1px solid #ededed;
+}
+.event-content{
+    float:left;
+    width:190px;
+    height: 75px;
+    margin-left:5px;
+}
+/*Event content Item*/
+.event-content a{
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    overflow-y:hidden;
+}
+.event-content a:hover {
+    text-decoration:underline;
+}
+.event-thumb {
+    height:75px;
+    width:75px;
+    float:left;
+}
+.event-thumb a {
+    max-height:75px;
+    max-width:75px;
+    display: block;
+    text-align:center;
+}
+.event-thumb a img{
+    max-height:75px;
+    max-width:75px;
+}
+.event-date{
+    width: 65px;
+    height: 70px;
+    float:left;
+    border-radius: 5px;
+    text-align:center;
+    background: -webkit-linear-gradient(top, #c71f24 0%,#C72126 100%);
+}
+/*Date display*/
+.date-month {
+    width:57px;
+    margin: 0 4px 0 4px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    font-size: 11px;
+    background-color:white;
+    color:black;
+}
+.date-date {
+    width:57px;
+    height:22px;
+    margin: 0 4px 0 4px;
+    padding: 0 0 1px 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color:white;
+    font-size:20px;
+    color:black;
+    font-weight:bold;
+    background-color:white;
+}
+.date-time {
+    color:white;
+    font-size: 10px;
+    padding: 1px 0 3px 0;
+}
+.date-day {
+    color:white;
+    font-size: 12px;
+    padding: 2px 0 2px 0;
+    font-weight: bold;
+}
+
+/* Options Page */
+#options-body {
+    .Roboto;
+    padding:0px;
+    margin:0px;
+    color:@theme-gray;
+    font-size:24px;
+}
+#options-side{
+    height:100%;
+    width:230px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color:#d9d9d9;
+    border-right: 2px solid #5a5a5a;
+}
+#options-main {
+    float:left;
+    margin-left:230px;
+    padding-left:30px;
+}
+#options-body h1 {
+    font-size:40px;
+    font-weight:bold;
+    span{ color:@theme-red; }
+}
+#options-form { 
+    height:36px; 
+    div {
+        float:left;
+        margin-right:10px;
+    }
+}
+.options-form-cell { padding-top:4px; }
+#options-form-userId {
+    height:28px;
+    font-size:20px;
+    vertical-align: bottom;
+}
+#options-form-button {
+    height:34px;
+    width: 70px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#E0393E),to(#C71F24));
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 0 inset;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 3px 3px 3px 3px;
+    line-height: 1;
+    font-size: 20px;
+    padding: 7px 7px 7px 7px;
+    color: #FFF;
+    &:active{ margin-top: 2px; }
+    &:hover{ cursor: pointer; }
+}
+#options-form-confirm { display:none; }
+#options-form-instructions{
+    margin-top:20px;
+    font-size:20px;
+}
+#options-form-confirm {
+    color:@theme-red;
+}
+#created-by{
+    margin-top:25px;
+    font-size:14px;
+}
+#created-by a{
+    color: #E51937;
+    text-decoration:none;
+}
+#created-by a:hover{
+    text-decoration:underline;
+}
+.mail
+{
+    color:#333 !important;
+}

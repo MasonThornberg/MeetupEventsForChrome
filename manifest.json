@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "Meetup Events for Chrome",
+	"short_name ": "Meetup Events for Chrome",
+	"version": "1.0",
+	"description" : "Meetup Calendar.",
+	"options_page" : "options.html", 
+	"browser_action": 
+	{
+		"default_icon": "Images/logo.png",
+		"default_popup": "popup.html"
+  	},
+	
+	"web_accessible_resources": 
+	[
+		"jQueryv2.0.3.js",
+		"popup.js",
+		"options.js",
+		"styles.css",
+		"options.css",
+		"Images/default_group.png",
+		"logo.png"
+	],
+	"permissions": 
+	[
+
+		"storage",
+	    "https://api.meetup.com/",
+	    "http://api.meetup.com/"
+  	]
+}
